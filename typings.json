@@ -1,0 +1,10 @@
+{
+  "globalDependencies": {
+    //some javascript libraries extend the language with features that typescript dont understand 
+    //for the translation they usually provide typescript definition files. *d.ts
+    //type definition files that are not included in the libraries when 
+    //automatically downloaded are manually included here
+    "core-js": "registry:dt/core-js#0.0.0+20160725163759",
+    "node": "registry:dt/node#6.0.0+20160831021119"
+  }
+}

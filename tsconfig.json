@@ -1,21 +1,17 @@
 {
   "compilerOptions": {
+    //tell the transpiler to transpile to the code in the target
     "target": "es5",
     "module": "commonjs",
     "moduleResolution": "node",
+    //specifies if typescript should generate map files. those help with debugging
     "sourceMap": true,
+    //support for decorators. these must be set to true of it wont compile
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "removeComments": false,
-    "noImplicitAny": false,
-    "suppressImplicitAnyIndexErrors": true,
-    "typeRoots": [
-      "./node_modules/@types/"
-    ]
-  },
-  "compileOnSave": true,
-  "exclude": [
-    "node_modules/*",
-    "**/*-aot.ts"
-  ]
+    //untyped variables will be defaulted to any if true.
+    "noImplicitAny": true,
+    "suppressImplicitAnyIndexErrors": true
+  }
 }
